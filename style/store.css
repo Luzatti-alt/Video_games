@@ -7,12 +7,14 @@
 }
 .info_jogo{
     background-color: aliceblue;
-    display: flexbox;
+    display: block;
+    margin: auto;
     width: 80%;
     height: 50%;
 }
 .principal_info{
     display: flex;
+    align-items: center;
     margin: auto;
 }
 .informacao{
