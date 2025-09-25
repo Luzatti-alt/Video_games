@@ -17,6 +17,10 @@
     align-items: center;
     margin: auto;
 }
+.principal_info img{
+    width: 50%;
+    height: 40%;
+}
 .informacao{
     width: 30%;
     height: 30%;
