@@ -5,3 +5,11 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.desconto {
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: rgb(247, 111, 111);
+    background-color: rgb(148, 72, 72);
+    padding: 2px;
+}
