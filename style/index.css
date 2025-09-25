@@ -5,10 +5,11 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    /*background-color: #BA01E8;*/
-}
-/* aqui os botões(so esquema de cor) */
-button {
-    background-color: #D9D9D9;
+
+.desconto {
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: rgb(247, 111, 111);
+    background-color: rgb(148, 72, 72);
+    padding: 2px;
 }
