@@ -13,11 +13,13 @@
 }
 .principal_info{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .informacao{
-    width: 30%;
-    height: auto;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 .informacao h2{
     font-size: 75%;
@@ -25,20 +27,25 @@
 }
 .informacao img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .imagens{
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    height: 100%;
-    gap:5px;
+    height: auto;
+}
+.imagens img:first-child {
+    width: 100%;             /* imagem principal ocupa toda a largura */
+    height: auto;
 }
 .imagens_secundarias{
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
 }
 .imagens_secundarias img{
     width: 18%;
-    height: 50%;
+    height: 10%;
 }
