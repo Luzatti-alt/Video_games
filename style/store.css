@@ -105,6 +105,9 @@ h1,h2,h3,h4,p,li{
     background-color: #811aff;
     margin-top: 5px;
 }
+.idiomas{
+    margin: 5px 15px;/*x na esquerda e direita*/
+}
 .sobre{
     background-color: #2e0066;
 }
