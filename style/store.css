@@ -94,6 +94,10 @@ background-color: rgb(173, 199, 199);
 .sobre{
     background-color: aqua;
 }
+.req{
+    display: flex;
+    gap: 55px;
+}
 .mais{
 background-color: aqua;
 }
