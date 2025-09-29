@@ -87,6 +87,12 @@ h1,h2,h3,p,li{
     height: 10%;
 }
 /*aqui fica a parte de detalhes extras*/
+.mais_infos{
+    display: flex;
+}
+.detalhes{
+    background-color: #2e0066;
+}
 button{
     background-color: lightgreen;
     position: relative;
