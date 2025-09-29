@@ -79,11 +79,14 @@ background-color: rgb(173, 199, 199);
     background-color: green;
 }
 .adquirir{
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
 }
 .adquirir p, button{
     /*aqui é o botão e o preço*/
-    right: 0;
+    margin: 0;
+    padding: 5px;
 }
 .evento{
     background-color: rgb(144, 0, 0);
