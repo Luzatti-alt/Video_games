@@ -111,6 +111,7 @@ background-color: rgb(173, 199, 199);
     width: 60%;
 }
 .sobre{
+    background-color: #2e0066;
     width: 60%;
 }
 .req{
@@ -118,7 +119,8 @@ background-color: rgb(173, 199, 199);
     gap: 55px;
 }
 .mais{
-width: 60%;
+    background-color: #811aff;
+    width: 60%;
 }
 .reviews{
 background-color: #2e0066;
