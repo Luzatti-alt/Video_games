@@ -92,10 +92,10 @@ h1,h2,h3,p,li{
 }
 .detalhes{
     background-color: #2e0066;
-    width: 50%;
+    width: 25%;
 }
 .geral{
-    width: 50%;
+    width: 75%;
 }
 button{
     background-color: lightgreen;
