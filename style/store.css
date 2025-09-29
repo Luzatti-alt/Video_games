@@ -12,8 +12,13 @@ h1,h2,h3,p,li{
     color: white;
 }
 .topo{
+    display: flex;
     background-color: #2e0066;
     height: 15%;
+    width: auto;
+}
+#logo{
+    height: 10vh;
 }
 .topo h1{
     background-color: #2e0066;
