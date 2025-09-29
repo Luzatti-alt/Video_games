@@ -8,7 +8,7 @@
 body{
     background-color: rgb(115, 0, 255);
 }
-h1,h2,h3,h4,p,li,th,tr{
+h1,h2,h3,h4,p,li,th,tr,a{
     color: white;
 }
 .topo{
@@ -23,18 +23,23 @@ h1,h2,h3,h4,p,li,th,tr{
     align-items: center;
 }
 .conta{
+    margin-top: 5px;
     display: flex;
+    gap: 5px;
 }
 .conta img{
-    height: 5vh;
+    height: 10vh;
 }
-.menu{
+.menu_topo{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
 }
 .menu_topo button{
-    height: 5hv;
-    width: 5wv;
+    height: 3hv;
+    width: 2wv;
+    padding: 8px 12px;
     align-items: center;
 }
 .texto{
@@ -134,11 +139,23 @@ h1,h2,h3,h4,p,li,th,tr{
 .sobre{
     background-color: #2e0066;
 }
+.redes a{
+    background-color: #811aff;
+    margin: 10px 15px;
+    display: block;
+    gap: 5px;
+}
 .req{
     display: flex;
     gap: 55px;
 }
-/*info lado esquero*/
+.min{
+    margin: 10px 25px;
+}
+.recomendados{
+    margin: 10px 25px;
+}
+/*info lado esquerdo*/
 .geral{
     width: 75%;
 }
@@ -182,5 +199,6 @@ background-color: rgb(173, 199, 199);
 }
 .reviews{
 background-color: #2e0066;
-width: 95%;
+width: 100vw;
+height: 30%;
 }
