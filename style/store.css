@@ -98,6 +98,12 @@ h1,h2,h3,h4,p,li{
 .compatibilidade{
     background-color: #2e0066;
 }
+.infos_play{
+    margin: 10px;
+}
+.infos_play h4{
+    background-color: #811aff;
+}
 .sobre{
     background-color: #2e0066;
 }
