@@ -213,5 +213,6 @@ background-color: rgb(173, 199, 199);
     gap: 5%;
 }
 .status_gameplay{
-    
+    display: flex;
+    gap: 25px;
 }
