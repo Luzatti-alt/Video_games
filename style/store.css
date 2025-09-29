@@ -67,32 +67,20 @@
     height: 10%;
 }
 .mais_infos{
-    
+    background-color: rgb(158, 9, 9);
 }
-.download_jogo_incompleto{
-
-}
-.download_jogo_completo{
-
-}
-.packs{
-
-}
-.DLC{
-
+.download{
+background-color: aqua;
 }
 .evento{
-
+    background-color: aqua;
 }
 .sobre{
-
-}
-.requerimentos{
-
+    background-color: aqua;
 }
 .mais{
-
+background-color: aqua;
 }
 .reviews{
-
-}
+background-color: aqua;
+} 
