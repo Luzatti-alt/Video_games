@@ -17,8 +17,19 @@ h1,h2,h3,h4,p,li,th,tr{
     height: 15%;
     width: auto;
 }
+.conta{
+    display: inline;
+    gap:10%;
+    align-content: space-beetwen;
+}
+.conta img{
+    height: 5vh;
+}
+.texto{
+    display: block;
+}
 #logo{
-    height: 3vh;
+    height: 10vh;
 }
 .topo h1{
     background-color: #2e0066;
@@ -135,13 +146,19 @@ background-color: rgb(173, 199, 199);
 }
 .adquirir{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
     gap: 10px; 
 }
 .adquirir p, button{
     /*aqui é o botão e o preço*/
-    margin: 0;
-    padding: 5px;
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+.adquirir img{
+    justify-content: flex-start;
+    height: 5vh;
 }
 .evento{
     background-color: rgb(144, 0, 0);
