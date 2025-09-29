@@ -99,10 +99,11 @@ h1,h2,h3,h4,p,li{
     background-color: #2e0066;
 }
 .infos_play{
-    margin: 10px;
+    margin: 10px 15px;/*x na esquerda e direita*/
 }
 .infos_play h4{
     background-color: #811aff;
+    margin-top: 5px;
 }
 .sobre{
     background-color: #2e0066;
