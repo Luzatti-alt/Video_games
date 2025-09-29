@@ -11,6 +11,9 @@ body{
 h1,h2,h3,p,li{
     color: white;
 }
+.topo{
+    background-color: #2e0066;
+}
 .info_jogo{
     background-color: lightgreen;
     display: block;
