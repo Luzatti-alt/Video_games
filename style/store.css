@@ -21,15 +21,15 @@
     flex-direction: column;
 }
 .informacao h2{
-    font-size: 75%;
+    font-size: 55%;
     margin: 10px;
 }
 .sobre {
     display: block;
 }
 p{
-    font-size: 75%;
-    margin-top: 2px;
+    font-size: 60%;
+    margin-top: 0px;
     margin-left: 10px;
     gap: 0px;
 }
@@ -42,11 +42,11 @@ p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
+    height: 50%;
 }
 .imagens img:first-child {
     width: 100%;             /* imagem principal ocupa toda a largura */
-    height: auto;
+    height: 50%;
 }
 .imagens_secundarias{
     display: flex;
