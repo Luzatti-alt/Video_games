@@ -33,6 +33,9 @@ p{
     margin-left: 10px;
     gap: 0px;
 }
+.tags{
+    display: flex;
+}
 .informacao img{
     width: 100%;
     height: auto;
