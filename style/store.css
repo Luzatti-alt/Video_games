@@ -66,17 +66,27 @@
     width: 18%;
     height: 10%;
 }
-.mais_infos{
-    background-color: rgb(158, 9, 9);
+
+button{
+    background-color: lightgreen;
+    position: relative;
+    right: 0;
 }
 .download{
-background-color: aqua;
+background-color: rgb(173, 199, 199);
 }
 .beta{
     background-color: green;
 }
+.adquirir{
+    position: relative;
+}
+.adquirir p, button{
+    /*aqui é o botão e o preço*/
+    right: 0;
+}
 .evento{
-    background-color: aqua;
+    background-color: rgb(144, 0, 0);
 }
 .sobre{
     background-color: aqua;
