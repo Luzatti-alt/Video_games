@@ -1,150 +1,133 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/store.css">
-    <title>jogo</title>
-</head>
-<body>
-    <div class="topo">
-        <img src="imagens/logo.png">
-        <h1>Paralel</h1>
-    </div>
-    <h1>nome do jogo</h1>
-    <div class="info_jogo">
-        <div class="principal_info">
-            <div class="imagens">
-                <div class="imagens_secundarias">
-                    <img src="imagens/gtavi.jfif">
-                    <img src="imagens/dbz.jfif">
-                    <img src="imagens/dbz.jfif">
-                    <img src="imagens/dbz.jfif">
-                    <img src="imagens/dbz.jfif">
-                    <img src="imagens/dbz.jfif">
-                </div>
-            </div>
-                <div class="informacao">
-                    <img src="imagens/subnautica.jfif" id="topo_imagem">
-                    <h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsa odio! Perferendis quidem nisi officiis earum ab, laboriosam nostrum consequatur vitae ex mollitia nobis, tenetur aut saepe sapiente porro laborum! Ducimus et rem distinctio praesentium dolorem incidunt, dolore ex optio debitis sit eligendi facilis tempore provident neque odit, officia perspiciatis.
-                    </h2>
-                    <div class="sobre">
-                        <p>Feedback:</p>
-                        <p>Lançamento:</p>
-                        <p>Desenvolvedores:</p>
-                        <p>Empresa:</p>
-                        <br>
-                        <p>categorias</p>
-                        <div class="tags">
-                            <p>tag 1</p>
-                            <p>tag 2</p>
-                            <p>tag 3</p>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <br>
-    <div class="mais_infos">
-        <div class="download">
-            <div class="beta">
-                <h2>download beta</h2>
-                <div class="adquirir">
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <br>
-            <div class="compra">
-                <h2>download</h2>
-                <div class="adquirir">
-                    <p>preço</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <br>
-            <div class="compra">
-                <h2>Packs</h2>
-                <div class="adquirir">
-                    <p>preço</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <br>
-            <div class="compra">
-                <h2>outreas edições</h2>
-                <div class="adquirir">
-                    <button>ver informações</button>
-                    <p>preço</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <br>
-            <div class="compra">
-                <h2>DLC's</h2>
-                <div class="adquirir">
-                    <p>preço</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="evento">
-            <h2>eventos</h2>
-            <img src="imagens/silksunga.jfif">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, delectus?</p>
-        </div>
-        <br>
-        <div class="sobre">
-            <h2>sobre</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, veniam!</p>
-            <h2>requerimentos</h2>
-            <div class="req">
-                <div class="min">
-                    <li>OS:</li>
-                    <li>CPU:</li>
-                    <li>GPU:</li>
-                    <li>RAM:</li>  
-                </div>
-                <div class="recomendados">
-                    <li>OS:</li>
-                    <li>CPU:</li>
-                    <li>GPU:</li>
-                    <li>RAM:</li>  
-                </div>
-            </div> 
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quos.</h3>
-        </div>
-        <br>
-        <div class="mais">
-            <h2>mais de</h2>
-            <div class="imagens_secundarias">
-                <img src="imagens/dbz.jfif">
-                <img src="imagens/dbz.jfif">
-                <img src="imagens/dbz.jfif">
-                <img src="imagens/dbz.jfif">
-                <img src="imagens/dbz.jfif">
-            </div>
-        </div>
-            <br>
-        <div class="mais">
-            <h2>semelhantes</h2>
-            <div class="imagens_secundarias">
-                <img src="imagens/subnautica.jfif">
-                <img src="imagens/subnautica.jfif">
-                <img src="imagens/subnautica.jfif">
-                <img src="imagens/subnautica.jfif">
-                <img src="imagens/subnautica.jfif">
-            </div>
-        </div>
-        <br>
-        <div class="reviews">
-            <h2>review</h2>
-            <p>jogo bão</p>
-            <p>jogo bão</p>
-            <p>jogo bão</p>
-        </div>
-    </div>
-    </div>
-</body>
-</html>
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(115, 0, 255);
+}
+h1,h2,h3,p,li{
+    color: white;
+}
+.topo{
+    display: flex;
+    background-color: #2e0066;
+    height: 15%;
+    width: auto;
+}
+#logo{
+    height: 10vh;
+}
+.topo h1{
+    background-color: #2e0066;
+    font-size: 300%;
+}
+.info_jogo{
+    background-color: lightgreen;
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+.principal_info{
+    display: flex;
+    align-items: flex-start;
+}
+.informacao{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.informacao h2{
+    font-size: 55%;
+    margin: 10px;
+}
+.sobre {
+    display: block;
+}
+.sobre p{
+    font-size: 60%;
+    margin-top: 0px;
+    margin-left: 10px;
+    gap: 0px;
+}
+.tags{
+    display: flex;
+}
+.tags p{
+    font-size: 60%;
+    display: flex;
+    color: #000000;
+    background-color: aliceblue;
+    width: auto;
+}
+.informacao img{
+    width: 100%;
+    height: auto;
+}
+.imagens{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50%;
+}
+.imagens img:first-child {
+    width: 100%;             /* imagem principal ocupa toda a largura */
+    height: 50%;
+}
+.imagens_secundarias{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+.imagens_secundarias img{
+    width: 18%;
+    height: 10%;
+}
+/*aqui fica a parte de detalhes extras*/
+button{
+    background-color: lightgreen;
+    position: relative;
+    right: 0;
+}
+.download{
+    width: 60%;
+}
+.compra{
+background-color: rgb(173, 199, 199);
+}
+.beta{
+    background-color: green;
+}
+.adquirir{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+}
+.adquirir p, button{
+    /*aqui é o botão e o preço*/
+    margin: 0;
+    padding: 5px;
+}
+.evento{
+    background-color: rgb(144, 0, 0);
+    width: 60%;
+}
+.sobre{
+    background-color: #2e0066;
+    width: 60%;
+}
+.req{
+    display: flex;
+    gap: 55px;
+}
+.mais{
+    background-color: #811aff;
+    width: 60%;
+}
+.reviews{
+background-color: #2e0066;
+width: 60%;
+}
