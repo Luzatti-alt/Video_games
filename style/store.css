@@ -125,7 +125,7 @@ button{
     right: 0;
 }
 .download{
-    width: 60%;
+    width: 95%;
 }
 .compra{
 background-color: rgb(173, 199, 199);
@@ -145,13 +145,13 @@ background-color: rgb(173, 199, 199);
 }
 .evento{
     background-color: rgb(144, 0, 0);
-    width: 60%;
+    width: 95%;
 }
 .mais{
     background-color: #811aff;
-    width: 60%;
+    width: 95%;
 }
 .reviews{
 background-color: #2e0066;
-width: 60%;
+width: 95%;
 }
