@@ -72,6 +72,9 @@ button{
     position: relative;
     right: 0;
 }
+.download{
+    width: 50%;
+}
 .compra{
 background-color: rgb(173, 199, 199);
 }
@@ -90,9 +93,11 @@ background-color: rgb(173, 199, 199);
 }
 .evento{
     background-color: rgb(144, 0, 0);
+    width: 50%;
 }
 .sobre{
     background-color: aqua;
+    width: 50%;
 }
 .req{
     display: flex;
@@ -100,7 +105,9 @@ background-color: rgb(173, 199, 199);
 }
 .mais{
 background-color: aqua;
+width: 80%;
 }
 .reviews{
 background-color: aqua;
+width: 50%;
 } 
