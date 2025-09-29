@@ -27,7 +27,7 @@
 .sobre {
     display: block;
 }
-p{
+.sobre p{
     font-size: 60%;
     margin-top: 0px;
     margin-left: 10px;
@@ -35,6 +35,12 @@ p{
 }
 .tags{
     display: flex;
+}
+.tags p{
+    font-size: 60%;
+    display: flex;
+    background-color: aliceblue;
+    width: auto;
 }
 .informacao img{
     width: 100%;
