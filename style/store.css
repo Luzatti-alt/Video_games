@@ -14,16 +14,28 @@ h1,h2,h3,h4,p,li,th,tr{
 .topo{
     display: flex;
     background-color: #2e0066;
+    justify-content: space-between;
     height: 15%;
     width: auto;
 }
+.Paralel{
+    display: flex;
+    align-items: center;
+}
 .conta{
-    display: inline;
-    gap:10%;
-    align-content: space-beetwen;
+    display: flex;
 }
 .conta img{
     height: 5vh;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_topo button{
+    height: 5hv;
+    width: 5wv;
+    align-items: center;
 }
 .texto{
     display: block;
