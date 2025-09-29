@@ -8,7 +8,7 @@
 body{
     background-color: rgb(115, 0, 255);
 }
-h1,h2,h3,p,li{
+h1,h2,h3,h4,p,li{
     color: white;
 }
 .topo{
@@ -90,10 +90,22 @@ h1,h2,h3,p,li{
 .mais_infos{
     display: flex;
 }
+
+/*info lado direito*/
 .detalhes{
-    background-color: #2e0066;
     width: 25%;
 }
+.compatibilidade{
+    background-color: #2e0066;
+}
+.sobre{
+    background-color: #2e0066;
+}
+.req{
+    display: flex;
+    gap: 55px;
+}
+/*info lado esquero*/
 .geral{
     width: 75%;
 }
@@ -124,14 +136,6 @@ background-color: rgb(173, 199, 199);
 .evento{
     background-color: rgb(144, 0, 0);
     width: 60%;
-}
-.sobre{
-    background-color: #2e0066;
-    width: 60%;
-}
-.req{
-    display: flex;
-    gap: 55px;
 }
 .mais{
     background-color: #811aff;
