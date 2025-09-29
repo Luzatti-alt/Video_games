@@ -5,6 +5,12 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: rgb(115, 0, 255);
+}
+h1,h2,h3,p,li{
+    color: white;
+}
 .info_jogo{
     background-color: lightgreen;
     display: block;
@@ -39,6 +45,7 @@
 .tags p{
     font-size: 60%;
     display: flex;
+    color: #000000;
     background-color: aliceblue;
     width: auto;
 }
@@ -66,7 +73,7 @@
     width: 18%;
     height: 10%;
 }
-
+/*aqui fica a parte de detalhes extras*/
 button{
     background-color: lightgreen;
     position: relative;
@@ -96,7 +103,6 @@ background-color: rgb(173, 199, 199);
     width: 60%;
 }
 .sobre{
-    background-color: aqua;
     width: 60%;
 }
 .req{
@@ -104,10 +110,10 @@ background-color: rgb(173, 199, 199);
     gap: 55px;
 }
 .mais{
-background-color: aqua;
 width: 60%;
 }
 .reviews{
-background-color: aqua;
+background-color: #000000;
+opacity: 60%;
 width: 60%;
 } 
