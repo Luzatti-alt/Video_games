@@ -13,6 +13,11 @@ h1,h2,h3,p,li{
 }
 .topo{
     background-color: #2e0066;
+    height: 15%;
+}
+.topo h1{
+    background-color: #2e0066;
+    font-size: 300%;
 }
 .info_jogo{
     background-color: lightgreen;
