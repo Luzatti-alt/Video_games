@@ -155,6 +155,12 @@ h1,h2,h3,h4,p,li,th,tr,a{
     margin: 2%;
     gap: 5%;
 }
+.denunciar button{
+    border-radius: 10%;
+    background-color: red;
+    height: auto;
+    width: 20%;
+}
 .redes a{
     background-color: #811aff;
     margin: 10px 15px;
