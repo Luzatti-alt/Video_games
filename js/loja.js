@@ -4,3 +4,27 @@ const comprarPack = document.getElementById('comprar_pack');
 const comprarEdicao = document.getElementById('comprar_edicao');
 const comprarDlc = document.getElementById('comprar_dlc');
 const denunciar = document.getElementById('denunciar');
+
+adquirirDemo.addEventListener('click', () => {
+    alert('Comprou Demo');
+});
+comprarJogoBase.addEventListener('click', () => {
+    alert('comprou Jogo Base');
+});
+
+comprarPack.addEventListener('click', () => {
+    alert('comprou Pack');
+});
+
+comprarEdicao.addEventListener('click', () => {
+    alert('comprou Edição');
+});
+
+comprarDlc.addEventListener('click', () => {
+    alert('comprou DLC');
+});
+
+denunciar.addEventListener('click', () => {
+    alert('Denunciar');
+});
+
