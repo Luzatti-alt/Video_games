@@ -182,7 +182,6 @@ background-color: rgb(173, 199, 199);
 }
 .adquirir{
     display: flex;
-    
     gap: 10px; 
 }
 .adquirir p, button{
