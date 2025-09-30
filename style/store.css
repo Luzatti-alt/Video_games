@@ -182,19 +182,21 @@ background-color: rgb(173, 199, 199);
 }
 .adquirir{
     display: flex;
-    justify-content: flex-end;
-    align-items: space-between;
+    
     gap: 10px; 
 }
 .adquirir p, button{
     /*aqui é o botão e o preço*/
-    margin-left: auto;
     display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
     gap: 10px;
 }
 .adquirir img{
     justify-content: flex-start;
+    margin-right:75%;
     height: 5vh;
+    left: 0px;
 }
 .evento{
     background-color: rgb(144, 0, 0);
