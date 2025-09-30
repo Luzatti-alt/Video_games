@@ -134,9 +134,18 @@ h1,h2,h3,h4,p,li,th,tr,a{
     margin-top: 5px;
 }
 .idiomas{
+    justify-items: center;
     margin: 5px 15px;/*x na esquerda e direita*/
 }
 .sobre{
+    justify-items: center;
+    background-color: #2e0066;
+    margin-bottom: 5%;
+}
+.empresa{
+    background-color: #2e0066;
+}
+.redes{
     background-color: #2e0066;
 }
 .denunciar{
@@ -145,6 +154,12 @@ h1,h2,h3,h4,p,li,th,tr,a{
     display: flex;
     margin: 2%;
     gap: 5%;
+}
+.denunciar button{
+    border-radius: 10%;
+    background-color: red;
+    height: auto;
+    width: 20%;
 }
 .redes a{
     background-color: #811aff;
