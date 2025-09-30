@@ -139,6 +139,12 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .sobre{
     background-color: #2e0066;
 }
+.denunciar{
+    background-color: #2e0066;
+    display: flex;
+    margin: 2%;
+    gap: 5%;
+}
 .redes a{
     background-color: #811aff;
     margin: 10px 15px;
