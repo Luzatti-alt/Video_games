@@ -182,8 +182,8 @@ background-color: rgb(173, 199, 199);
 }
 .adquirir{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: space-between;
     gap: 10px; 
 }
 .adquirir p, button{
