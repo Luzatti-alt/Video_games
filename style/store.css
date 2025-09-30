@@ -134,9 +134,17 @@ h1,h2,h3,h4,p,li,th,tr,a{
     margin-top: 5px;
 }
 .idiomas{
+    justify-items: center;
     margin: 5px 15px;/*x na esquerda e direita*/
 }
 .sobre{
+    justify-items: center;
+    background-color: #2e0066;
+}
+.empresa{
+    background-color: #2e0066;
+}
+.redes{
     background-color: #2e0066;
 }
 .denunciar{
