@@ -182,6 +182,19 @@ h1,h2,h3,h4,p,li,th,tr,a{
     background-color: #2e0066;
     margin-bottom: 5%;
 }
+.idade{
+    justify-items: center;
+    background-color: #2e0066;
+    margin-bottom: 5%;
+}
+.indicacao{
+    display: flex;
+    align-items: center;
+}
+.indicacao img{
+    width: 50%;
+    height: auto;
+}
 .empresa{
     background-color: #2e0066;
 }
