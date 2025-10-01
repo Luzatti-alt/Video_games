@@ -45,11 +45,11 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .menu_topo button{
     background-color: #773977;
+    color:#c27cc2;
     font-size: 170%;
     border: none;
-    color: white;
-    height: 3hv;
-    width: 2wv;
+    height: 3vh;
+    width: 2vw;
     padding: 8px 12px;
     align-items: center;
 }
@@ -64,12 +64,15 @@ h1,h2,h3,h4,p,li,th,tr,a{
     font-size: 300%;
 }
 .barra_pesquisa{
-    background-color: #1c003f;
+    background-color: #472247;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5%;
     width: 100vw;
+}
+.barra_pesquisa h2{
+    color:#c27cc2;
 }
 .elementos_topo{
     display: flex;
@@ -84,11 +87,11 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .pesquisar input{
     width: 92%;
-    background-color: #552c88;
+    background-color: #3a0180;
     border:none;
 }
 .pesquisar button{
-    background-color: #552c88;
+    background-color: #3a0180;
     width: 35%;
     border: none;
 }
