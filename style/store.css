@@ -180,6 +180,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .denunciar{
     background-color: #2e0066;
     align-items: center;
+    justify-content: space-between;
     display: flex;
     margin: 2%;
     gap: 5%;
