@@ -66,7 +66,12 @@ h1,h2,h3,h4,p,li,th,tr,a{
     display: flex;
     align-items: space-between;
     background-color: #552c88;
-    width: 30%;
+    width: 20%;
+}
+.pesquisar input{
+    width: 92%;
+    background-color: #552c88;
+    border:none;
 }
 .pesquisar button{
     background-color: #552c88;
