@@ -56,6 +56,22 @@ h1,h2,h3,h4,p,li,th,tr,a{
     background-color: #2e0066;
     font-size: 300%;
 }
+.barra_pesquisa{
+    background-color: #1c003f;
+    display: flex;
+    gap: 10px;
+}
+.pesquisar{
+    display: flex;
+    align-items: space-between;
+    background-color: #552c88;
+    width: 30%;
+}
+.pesquisar button{
+    background-color: #552c88;
+    border: none;
+    width: 10%;
+}
 .info_jogo{
     background-color: #2e0066;
     display: block;
