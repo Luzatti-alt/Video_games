@@ -313,6 +313,9 @@ button{
     background-color: #180035;
     width: 100vw;
 }
+.roda_pe h2{
+    color: #c27cc2;
+}
 .roda_pe img{
     height: 10vh;
 }
@@ -324,7 +327,7 @@ button{
     gap: 3vw;
 }
 .barra_fundo button{
-    color: #ffffff;
+    color: #c27cc2;
     background-color: #1c003f;
     font-size: 130%;
     border:none;
