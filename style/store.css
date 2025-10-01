@@ -156,10 +156,10 @@ h1,h2,h3,h4,p,li,th,tr,a{
     gap: 5%;
 }
 .denunciar button{
+    height: 30%;
+    width: 10%;
     border-radius: 10%;
     background-color: red;
-    height: auto;
-    width: 20%;
 }
 .redes a{
     background-color: #811aff;
@@ -231,6 +231,10 @@ background-color: rgb(173, 199, 199);
     background-color: #200047;
     width: 40%;
 }
+.status_gameplay img{
+    height: 5vh;
+    width: auto;
+}
 .review{
     display: flex;
     gap: 5%;
@@ -238,4 +242,10 @@ background-color: rgb(173, 199, 199);
 .status_gameplay{
     display: flex;
     gap: 25px;
+}
+.roda_pe{
+    background-color: #200047;
+}
+.roda_pe img{
+    height: 10vh;
 }
