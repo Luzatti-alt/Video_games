@@ -68,14 +68,14 @@ h1,h2,h3,h4,p,li,th,tr,a{
     flex-direction: column;
 }
 .informacao h2{
-    font-size: 55%;
+    font-size: 75%;
     margin: 10px;
 }
 .sobre_jogo {
     display: block;
 }
 .sobre_jogo p{
-    font-size: 60%;
+    font-size: 100%;
     margin-top: 0px;
     margin-left: 10px;
     gap: 0px;
@@ -84,9 +84,9 @@ h1,h2,h3,h4,p,li,th,tr,a{
     display: flex;
 }
 .tags p{
-    font-size: 80%;
+    font-size: 150%;
     display: flex;
-    color: #000000;
+    color: #ffffff;
     background-color: #811aff;
     width: auto;
 }
