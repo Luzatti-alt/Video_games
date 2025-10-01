@@ -46,7 +46,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .menu_topo button{
     background-color: #773977;
     color:#c27cc2;
-    font-size: 170%;
+    font-size: 150%;
     border: none;
     height: 3vh;
     width: 2vw;
@@ -255,7 +255,14 @@ button{
     margin-right: 10px;
 }
 .beta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: green;
+}
+.beta button{
+    height: 80%;
+    margin-right: 10px;
 }
 .adquirir{
     display: flex;
