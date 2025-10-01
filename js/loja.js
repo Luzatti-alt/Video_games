@@ -4,7 +4,11 @@ const comprarPack = document.getElementById('comprar_pack');
 const comprarEdicao = document.getElementById('comprar_edicao');
 const comprarDlc = document.getElementById('comprar_dlc');
 const denunciar = document.getElementById('denunciar_but');
+const pesquisa = document.getElementById('pesquisar');
 
+pesquisa.addEventListener('click', () => {
+    alert('Pesquisar');
+});
 adquirirDemo.addEventListener('click', () => {
     alert('Comprou Demo');
 });

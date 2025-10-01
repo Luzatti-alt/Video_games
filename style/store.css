@@ -59,7 +59,11 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .barra_pesquisa{
     background-color: #1c003f;
     display: flex;
+    justify-content: space-between;
     height: 5%;
+}
+.elementos_topo{
+    display: flex;
     gap: 10px;
 }
 .pesquisar{
