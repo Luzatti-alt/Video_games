@@ -37,6 +37,10 @@ h1,h2,h3,h4,p,li,th,tr,a{
     width: 30%;
 }
 .menu_topo button{
+    background-color: #2e0066;
+    font-size: 170%;
+    border: none;
+    color: white;
     height: 3hv;
     width: 2wv;
     padding: 8px 12px;
