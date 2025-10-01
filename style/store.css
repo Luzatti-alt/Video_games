@@ -26,6 +26,8 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .conta{
     margin-top: 5px;
     display: flex;
+    align-items: center;
+    margin-right: 25px;
     gap: 5px;
 }
 .conta img{
@@ -61,6 +63,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
     background-color: #1c003f;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 5%;
     width: 100vw;
 }
