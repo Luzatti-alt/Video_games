@@ -8,7 +8,7 @@ const pesquisa = document.getElementById('pesquisar');
 //carrosel
 let indice = 0;
 let slide = document.getElementById("slide");
-let imagens = ["imagens/gtavi.jfif","imagens/dbz.jfif"];
+let imagens = ["imagens/gtavi.jfif","imagens/dbz.jfif","imagens/dbz.jfif","imagens/silksong-full.jfif","imagens/subnautica.jfif","imagens/terra.jfif"];
 setInterval(() => {
     if (indice >= imagens.length) {
         indice = 0; // Reinicia o índice para 0 quando chega ao final do array
