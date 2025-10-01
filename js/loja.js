@@ -5,7 +5,19 @@ const comprarEdicao = document.getElementById('comprar_edicao');
 const comprarDlc = document.getElementById('comprar_dlc');
 const denunciar = document.getElementById('denunciar_but');
 const pesquisa = document.getElementById('pesquisar');
+//carrosel
+let indice = 0;
+let slide = document.getElementById("slide");
+let imagens = ["imagens/gtavi.jfif","imagens/dbz.jfif"];
+setInterval(() => {
+    if (indice >= imagens.length) {
+        indice = 0; // Reinicia o índice para 0 quando chega ao final do array
+    }
+    slide.src = imagens[indice];
+    indice++; // Incrementa o índice para a próxima imagem
+}, 3000);
 
+//eventos dos botões
 pesquisa.addEventListener('click', () => {
     alert('Pesquisar');
 });
