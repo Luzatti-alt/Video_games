@@ -220,24 +220,29 @@ button{
 }
 .compra{
 background-color: rgb(173, 199, 199);
+margin-right: 10px;
 }
 .beta{
     background-color: green;
 }
 .adquirir{
     display: flex;
-    gap: 10px; 
+    gap: 10px;
+    justify-content: space-between;
 }
-.adquirir p, button{
+.adquirir p{
     /*aqui é o botão e o preço*/
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
-    gap: 10px;
+    margin-right: 15%;
+}
+.adquirir button{
+    /*aqui é o botão e o preço*/
+    display: flex;
+    justify-content: flex-end;
 }
 .adquirir img{
     justify-content: flex-start;
-    margin-right:87%;
     height: 5vh;
     left: 0px;
 }
