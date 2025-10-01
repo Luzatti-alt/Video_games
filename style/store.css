@@ -219,15 +219,15 @@ button{
     width: 95%;
 }
 .compra{
-background-color: rgb(173, 199, 199);
-margin-right: 10px;
+    background-color: rgb(173, 199, 199);
+    margin-right: 10px;
 }
 .beta{
     background-color: green;
 }
 .adquirir{
     display: flex;
-    gap: 10px;
+    width: auto;
     justify-content: space-between;
 }
 .adquirir p{
@@ -282,4 +282,14 @@ margin-right: 10px;
 }
 .roda_pe img{
     height: 10vh;
+}
+.barra_fundo{
+    display: block;
+    margin: 0;
+}
+.barra_fundo button{
+    color: #ffffff;
+    background-color: #1c003f;
+    font-size: 130%;
+    border:none;
 }
