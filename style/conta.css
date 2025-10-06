@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 h1,h2,h3,h4,p,li,th,tr,a{
-    color: white;
+    color: #c27cc2;
 }
 .info_main_conta{
     margin-left:1.85%;
@@ -34,6 +34,17 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .outras_infos_main h1{
     margin-bottom: 60%;
+}
+.lv{
+    display: flex;
+    gap: 3%;
+}
+.lv h2{
+    border-style: none;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 3cm;
+    height: 100%;
 }
 .texto{
     display: flex;
@@ -73,6 +84,9 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .main_info img{
     height: 30%;
     width: 30%;
+}
+.texto_jogo h1{
+    margin-bottom: 10%;
 }
 .mais{
     justify-content: center;
@@ -116,8 +130,17 @@ h1,h2,h3,h4,p,li,th,tr,a{
     margin-bottom: 1%;
 }
 .comentar input{
-    width: 80%;
+    width: 60%;
     background-color: #773977;
+    border-style: groove;
+    height: 5vh;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.comentar button{
+    width: 10%;
+    background-color: #773977;
+    color: #c27cc2;
     border-style: groove;
     height: 5vh;
     margin-top: 2%;
