@@ -87,6 +87,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .pesquisar input{
     width: 92%;
+    color: #c27cc2;
     background-color: #3a0180;
     border:none;
 }

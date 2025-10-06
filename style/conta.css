@@ -17,6 +17,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
     margin-top: 5%;
     background-color: #472247;
     border-style: groove;
+    justify-content: space-between;
     height: 10%;
     width: 94%;
     display: flex;
@@ -30,7 +31,8 @@ h1,h2,h3,h4,p,li,th,tr,a{
     display: block;
     justify-content: space-between;
     gap: 40%;
-    height:35vh;
+    height:8%;
+    margin-bottom: 2%;
 }
 .outras_infos_main button{
     background-color: #c27cc2;
@@ -59,7 +61,7 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .texto{
     display: flex;
-    width: 65vh;
+    width: 80%;
     justify-content: space-between;
 }
 
