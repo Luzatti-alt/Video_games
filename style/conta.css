@@ -32,6 +32,11 @@ h1,h2,h3,h4,p,li,th,tr,a{
     gap: 40%;
     height:35vh;
 }
+.outras_infos_main button{
+    background-color: #c27cc2;
+    height:3vh;
+    width:15vw;
+}
 .outras_infos_main h1{
     margin-bottom: 60%;
 }
