@@ -9,6 +9,35 @@ body{
     background-color: #773977;
     overflow-x: hidden;
 }
+.topo{
+    display: flex;
+    background-color: #773977;
+    justify-content: space-between;
+    height: 15%;
+    width: 100vw;
+}
+.Paralel h1{
+    background-color: none;
+    color:#c27cc2;
+}
+.Paralel{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    height: 10vh;
+}
 h1,h2,h3,h4,p,li,th,tr,a{
     color: #c27cc2;
+}
+.criar_conta{
+    background-color: #472247;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.infos input{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 90%;
 }
