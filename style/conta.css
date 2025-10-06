@@ -37,7 +37,13 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .lv{
     display: flex;
-    gap: 3%;
+    gap: 5%;
+}
+.n_lv{
+    border-style: none;
+    background-color: #ffffff;
+    height: 4vh;
+    border-radius: 100%;
 }
 .lv h2{
     border-style: none;
