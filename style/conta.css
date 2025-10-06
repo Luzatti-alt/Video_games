@@ -23,13 +23,17 @@ h1,h2,h3,h4,p,li,th,tr,a{
     gap: 5vw;
 }
 .info_main_conta img{
-    height: auto;
+    height:35vh;
     width: 20vw;
 }
 .outras_infos_main{
     display: block;
     justify-content: space-between;
     gap: 40%;
+    height:35vh;
+}
+.outras_infos_main h1{
+    margin-bottom: 60%;
 }
 .texto{
     display: flex;
@@ -86,11 +90,12 @@ h1,h2,h3,h4,p,li,th,tr,a{
 }
 .itens_social{
     display: block;
-    margin-left: 2vw;
+    margin: 5px 15px;
 }
 .itens_social h1{
     border-style: groove;
     width: 95%;
+    margin-bottom: 2%;
 }
 /**/
 .comentarios{
@@ -107,7 +112,14 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .comentar img{
     width: 5%;
     height: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .comentar input{
-    width: 80%
+    width: 80%;
+    background-color: #773977;
+    border-style: groove;
+    height: 5vh;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
