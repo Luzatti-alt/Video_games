@@ -35,9 +35,40 @@ h1,h2,h3,h4,p,li,th,tr,a{
     width: 60%;
     margin-top: 10%;
     margin-left: 20%;
+    margin-bottom: 10%;
+}
+.criar_conta button{
+    margin-left: 35%;
+    background-color: #773977;
+    color: #c27cc2;
+    height: 20%;
+    width: 30%;
 }
 .infos input{
     margin-left: 5%;
     margin-bottom: 3%;
     width: 90%;
+}
+.roda_pe{
+    background-color: #180035;
+    width: 100vw;
+}
+.roda_pe h2{
+    color: #c27cc2;
+}
+.roda_pe img{
+    height: 10vh;
+}
+.barra_fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 3vw;
+}
+.barra_fundo button{
+    color: #c27cc2;
+    background-color: #1c003f;
+    font-size: 130%;
+    border:none;
 }
