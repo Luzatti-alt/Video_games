@@ -28,3 +28,28 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .outras_infos_main{
     justify-content: space-between;
 }
+.info_games{
+    margin-left: 1%;
+    margin-top: 3%;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+}
+.recentes{
+    background-color: #472247;
+    width: 46%;
+}
+.jogos_recentes{
+    width: auto;
+}
+.main_info{
+    display: flex;
+}
+.main_info img{
+    height: 30%;
+    width: 30;
+}
+.social{
+    background-color: #472247;
+    width: 46%;
+}
