@@ -7,6 +7,6 @@ criar_conta.addEventListener('click', () => {
         alert("As senhas não são a mesma. Tente novamente.");
         return; // Impede o envio do formulário
     }
-    alert('criando conta com email:${email} e ${senha}');
+    alert(`criando conta com email: ${email} e ${senha}`);
 });
 
