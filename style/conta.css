@@ -13,6 +13,9 @@ h1,h2,h3,h4,p,li,th,tr,a{
     color: white;
 }
 .info_main_conta{
+    margin-top: 10%;
+    background-color: #472247;
+    border-style: groove;
     height: 10%;
     width: 100%;
     display: flex;
