@@ -57,6 +57,20 @@ header{
 
 /*Comprar*/
 
+div.comprar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #472247;
+    padding: 10px 20px;
+    height: 50px;
+    margin: 0px 0px 10px 50px;
+    border-radius: 5px;
+    width: 800px;
+}
+div.comprar p{
+    font-size: 1.1em;
+}
 .price-info {
     display: flex;
     align-items: center; 
@@ -82,87 +96,7 @@ header{
     font-size: 16px;
     font-weight: bold;
 }
-.Paralel h1{
-    background-color: none;
-    color:#c27cc2;
-}
-.Paralel{
-    display: flex;
-    align-items: center;
-}
-.conta{
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-    gap: 5px;
-}
-.conta img{
-    height: 10vh;
-}
-.menu_topo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-}
-.menu_topo button{
-    background-color: #773977;
-    color:#c27cc2;
-    font-size: 150%;
-    border: none;
-    height: 3vh;
-    width: 2vw;
-    padding: 8px 12px;
-    align-items: center;
-}
-.texto{
-    display: block;
-}
-#logo{
-    height: 10vh;
-}
-.topo h1{
-    background-color: #773977;
-    font-size: 300%;
-}
-.barra_pesquisa{
-    background-color: #472247;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5%;
-    width: 100vw;
-}
-.barra_pesquisa h2{
-    color:#c27cc2;
-}
-.elementos_topo{
-    display: flex;
-    gap: 10px;
-}
-.pesquisar{
-    display: flex;
-    align-items: space-between;
-    background-color: #552c88;
-    width: 20%;
-    height: 30%;
-}
-.pesquisar input{
-    width: 92%;
-    color: #c27cc2;
-    background-color: #3a0180;
-    border:none;
-}
-.pesquisar button{
-    background-color: #3a0180;
-    width: 35%;
-    border: none;
-}
-.pesquisar img{
-    width: 20%;
-    height: 100%;
-}
+
 .info_jogo{
     background-color: #472247;
     display: block;
