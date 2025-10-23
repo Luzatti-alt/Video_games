@@ -57,7 +57,15 @@ header{
 
 /*Comprar*/
 
+div#info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "comprar informacoes";
+    gap: 20px;
+    padding: 20px;
+}
 div.comprar{
+    grid-area: "comprar";
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,7 +74,7 @@ div.comprar{
     height: 50px;
     margin: 0px 0px 10px 50px;
     border-radius: 5px;
-    width: 800px;
+    width: 700px;
 }
 div.comprar p{
     font-size: 1.1em;
@@ -96,7 +104,53 @@ div.comprar p{
     font-size: 16px;
     font-weight: bold;
 }
+div.comprar button{
+    border: 1.5px solid darkgreen;
+    border-radius: 3px;
+    margin-left: 8px;
+    height: 30px;
+    width: 60px;
+    color: darkgreen;
+    cursor: pointer;
+}
 
+/*Detalhes*/
+
+.detalhes{
+    grid-area: "informacoes";
+    display: grid;
+    grid-template-areas:
+        "compatibilidade"
+        "controles"
+        "idiomas";
+    gap: 20px;
+}
+.box-info{
+    background-color: #472247;
+    padding: 15px;
+    width: 380px;
+}
+.box-info h2{
+    color: #b67eb6;
+    margin-bottom: 8px;
+}
+.box-info ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.box-info li{
+    text-decoration: none;
+    background-color: #301630;
+    padding: 3px 3px 3px 10px;
+    margin-bottom: 4px;
+    color: #b67eb6;
+}
+.box-info li:hover{
+    background-color: #b67eb6;
+    color: #301630;
+    cursor: pointer;
+}
 .info_jogo{
     background-color: #472247;
     display: block;
@@ -165,9 +219,7 @@ div.comprar p{
 }
 
 /*info lado direito*/
-.detalhes{
-    width: 25%;
-}
+
 .compatibilidade{
     background-color: #472247;
 }
