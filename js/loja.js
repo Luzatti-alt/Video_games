@@ -8,7 +8,7 @@ const pesquisa = document.getElementById('pesquisar');
 //carrosel
 let indice = 0;
 let slide = document.getElementById("slide");
-let imagens = ["imagens/gtavi.jfif","imagens/dbz.jfif","imagens/dbz.jfif","imagens/silksong-full.jfif","imagens/subnautica.jfif","imagens/terra.jfif"];
+let imagens = ["imagens/Capa-Silksong.jpg","imagens/silksong-gameplay(1).jpg","imagens/silksong-gameplay(2).jpg","imagens/silksong-gameplay(3).webp","imagens/silksong-gameplay(4).jpg"];
 setInterval(() => {
     if (indice >= imagens.length) {
         indice = 0; // Reinicia o índice para 0 quando chega ao final do array
