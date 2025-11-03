@@ -19,6 +19,7 @@ header{
 #header-nav img{
     width: 150px;
     margin-left: 20%;
+    cursor: pointer;
 }
 .parallel-options a{
     color: #b67eb6;
