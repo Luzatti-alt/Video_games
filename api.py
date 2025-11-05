@@ -28,14 +28,13 @@ def criar_conta():
             return jsonify({"status": "erro", "mensagem": "Email já cadastrado!"})
         #verifica disponibilidade do nick
         if session.query(Contas).filter_by(nick=nick).first():
+            return jsonify({"status": "erro", "mensagem": "Nick já cadastrado!"}), 400
+        else:
             conta_senha = bcrypt.generate_password_hash(dados["senha"]).decode("utf-8")
-            nova_conta = Contas(nick=nick,email=email,senha=conta_senha)
-            #conectar com o bd
+            nova_conta = Contas(nick=nick, email=email, senha=conta_senha)
             session.add(nova_conta)
             session.commit()
             return jsonify({"status": "ok", "mensagem": "Conta criada com sucesso!"})
-        else:
-            return jsonify({"status": "ok", "mensagem": "nick ja cadastrado!"})
     except Exception as e:
         session.rollback()
         print(f"Erro ao cadastrar conta: {str(e)}")
