@@ -15,6 +15,10 @@ body{
 header{
     margin-bottom: 20px;
 }
+#carrinho{
+    height: 50px;
+    width: 50px;
+}
 #header-nav{
     display: flex;
     align-items: center;
@@ -23,7 +27,16 @@ header{
 #header-nav img{
     width: 150px;
     margin-left: 20%;
-    cursor: pointer;
+}
+#header-nav #user{
+    width: 60px;
+}div.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    min-width: 150px;
 }
 .parallel-options a{
     color: #b67eb6;
@@ -31,9 +44,6 @@ header{
     font-weight: bold;
     margin: 0px 10px;
 }
-/*Main*/
-
-/*Barra de pesquisa*/
 
 #main-nav{
     background-color: #472247;
@@ -42,7 +52,7 @@ header{
     justify-content: space-evenly;
     width: 60%;
     height: 35px;
-    margin: 0px auto 20px ;
+    margin: auto;
     padding: 5px 0px;
 }
 #main-nav a,p{

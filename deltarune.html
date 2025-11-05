@@ -10,13 +10,22 @@
 <body>
     <header>
         <nav id="header-nav">
-            <img src="imagens/logo.png" alt="logo" onclick="window.location.href='index.html'">
+            <img src="imagens/logo.png" alt="Logo">
             <div class="parallel-options">
                 <a href="index.html">STORE</a>
                 <a href="#">LIBRARY</a>
                 <a href="#">COMMUNITY</a>
                 <a href="#">SUPPORT</a>
             </div>
+            <div class="user">
+                <p id="nick">Bem vindo,</p>
+                <a href="login.html">
+                    <img src="imagens/user.svg" alt="User icon" id="user">
+                </a>
+            </div>
+            <a href="carrinho.html">
+                <img src="imagens/carrinho.svg" alt="carrinho icon" id="carrinho">
+            </a>
         </nav>
     </header>
     <main>
@@ -246,6 +255,7 @@
         </div>
     </footer>
     <script src="js/whats.js"></script>
+    <script src="js/dados.js" defer></script>
     <script src="js/salvar_carrinho.js"></script>
     <script src="js/loja_deltarune.js"></script>
 </body>
