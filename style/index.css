@@ -11,6 +11,10 @@ body{
 header{
     margin-bottom: 20px;
 }
+#carrinho{
+    height: 50px;
+    width: 50px;
+}
 #header-nav{
     display: flex;
     align-items: center;
@@ -20,6 +24,17 @@ header{
     width: 150px;
     margin-left: 20%;
     cursor: pointer;
+}
+#header-nav #user{
+    width: 60px;
+}
+div.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    min-width: 150px;
 }
 .parallel-options a{
     color: #b67eb6;
