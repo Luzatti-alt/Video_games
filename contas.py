@@ -13,7 +13,7 @@ class Contas(Base):
 class Biblioteca(Base):
     __tablename__ = 'biblioteca'
     id = Column(Integer, primary_key=True)
-    jogos = Column(String(59))#
+    jogos = Column(String(50))#
     conta_id = Column(Integer, ForeignKey('contas.id'))  
     conta = relationship('Contas', back_populates='meus_jogos')
 if __name__ == '__main__':

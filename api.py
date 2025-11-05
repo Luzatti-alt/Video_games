@@ -58,12 +58,12 @@ def login():
         if bcrypt.check_password_hash(conta.senha, senha):
             return jsonify({
                 "status": "ok",
-                "mensagem": f"Bem-vindo, {conta.nome_motorista} a paralel!",
+                "mensagem": f"Bem-vindo, {conta.nick} a paralel!",
                 "usuario": {
                     "id": conta.id,
                     "nick": conta.nick,
                     "email": conta.email,
-                    "jogos": conta.jogos
+                    "jogos": conta.meus_jogos
                     }
                     })
         else:
