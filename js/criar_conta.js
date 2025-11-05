@@ -7,6 +7,30 @@ criar_conta.addEventListener('click', () => {
         alert("As senhas não são a mesma. Tente novamente.");
         return; // Impede o envio do formulário
     }
+    const dadosConta = {
+        email: email,
+        senha: senha,
+        senha_conf: senhaConf
+    };
+    fetch('http://10.158.49.11:5000/criar_conta', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dadosConta)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            alert(data.mensagem);
+        } else {
+            alert(data.mensagem);
+        }
+    })
+    .catch(error => {
+        console.error("Erro:", error);
+        alert("Ocorreu um erro ao criar a conta. Tente novamente.");
+    });
     alert(`criando conta com email: ${email} e ${senha}`);
 });
 
