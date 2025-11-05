@@ -9,27 +9,6 @@ body{
     background-color: #773977;
     overflow-x: hidden;
 }
-.topo{
-    display: flex;
-    background-color: #773977;
-    justify-content: space-between;
-    height: 15%;
-    width: 100vw;
-}
-.Paralel h1{
-    background-color: none;
-    color:#c27cc2;
-}
-.Paralel{
-    display: flex;
-    align-items: center;
-}
-#logo{
-    height: 10vh;
-}
-h1,h2,h3,h4,p,li,th,tr,a{
-    color: #c27cc2;
-}
 .criar_conta{
     background-color: #472247;
     width: 60%;
@@ -48,9 +27,6 @@ h1,h2,h3,h4,p,li,th,tr,a{
     width: 150px;
     border: none;
     margin-bottom: 15px;
-}
-h6{
-    font-size: 0%;
 }
 .criar_conta h1{
     margin-left: 5%;

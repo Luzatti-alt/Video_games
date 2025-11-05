@@ -23,6 +23,7 @@ header{
 #header-nav img{
     width: 150px;
     margin-left: 20%;
+    cursor: pointer;
 }
 #header-nav #user{
     width: 60px;
