@@ -22,6 +22,8 @@ document.querySelector("form").addEventListener("submit", function(event) {
     .then(data => {
         if (data.status === "ok") {
             alert(data.mensagem);
+            localStorage.setItem("usuarioEmail", email);
+            localStorage.setItem("nick", nick);//dai ele vai trocar o nick
             window.location.href = "/index.html";
         } else {
             alert(data.mensagem);
