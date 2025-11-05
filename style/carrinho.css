@@ -92,6 +92,15 @@ h1,h2,h3,h4,p,li,th,tr,a{
 .sobre_compra{
     gap:5%;
 }
+.plataformas{
+    gap: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.plataformas img{
+    height: 50px;
+    width: 50px;
+}
 #comprar_para{
     width: 300px;
 }
