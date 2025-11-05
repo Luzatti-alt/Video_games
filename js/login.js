@@ -22,7 +22,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
     .then(data => {
         if (data.status === "ok") {
             alert(data.mensagem);
-            window.location.href = "index.html";
+            window.location.href = "/index.html";
         } else {
             alert(data.mensagem);
         }
