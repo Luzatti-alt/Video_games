@@ -52,6 +52,16 @@ h1,h2,h3,h4,p,li,th,tr,a{
 h6{
     font-size: 0%;
 }
+.criar_conta h1{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 90%;
+}
+.infos h1{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 90%;
+}
 .infos input{
     margin-left: 5%;
     margin-bottom: 3%;
