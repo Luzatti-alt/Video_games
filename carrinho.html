@@ -9,19 +9,47 @@
 <!--esqueleto-->
 <body>
     <h1>seu carrinho</h1>
-    <div class="container">
-        <h1>itens aqui</h1>
+    <div class="carrinho">
+        <div class="compras">
+        <!--placehoarder de como ficara-->
         <div class="jogo">
-            <h1>jogo</h1>
-            <h1>preço</h1>
+            <!--informações do jogo-->
+            <div class="jogo_info">
+                <img src="imagens/dbz.jfif">
+                <div class="sobre_compra">
+                    <h1>Dragon Ball: Sparking! Zero</h1>
+                    <div class="plataformas">
+                        <img src="imagens/pc.png">
+                        <img src="imagens/pc.png">
+                        <img src="imagens/pc.png">
+                    </div>
+                    <select id="comprar_para">
+                        <option value="para mim">para mim</option>
+                        <option value="presente">presente</option>
+                    </select>
+                </div>
+            </div>
+            <!--preço-->
+            <div class="preço">
+                <h1>Preço:</h1>
+                <h1>R$00,00</h1>
+                <div class="controle_carrinho">
+                    <button>adicionar</button>
+                    <button>remover</button>
+                </div>
+            </div>
         </div>
+        <!--parte de controle da compra-->
+            <div class="compras">
+                <button>comprar</button>
+                <button>comprar como presente</button>
+                <button>remover todos os itens</button>
+            </div>
+    </div>
+        <!--finalizar compra-->
         <div class="total">
             <h1>total</h1>
-            <h1>valor</h1>
-        </div>
-        <div class="compras">
-            <button>comprar</button>
-            <button>comprar como presente</button>
+            <button>finlaizar compra</button>
         </div>
     </div>
 </body>

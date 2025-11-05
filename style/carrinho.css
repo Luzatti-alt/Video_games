@@ -12,3 +12,26 @@ body{
 h1,h2,h3,h4,p,li,th,tr,a{
     color: #c27cc2;
 }
+.carrinho{
+    display: flex;;
+}
+.compras{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.jogo{
+    display: flex;
+    background-color: #472247;
+    width: 95%;
+    gap: 5%;
+}
+.jogo_info{
+    display: flex;
+}
+.total{
+    background-color: #472247;
+
+    width: 10%;
+    margin-right: 10%;
+}
