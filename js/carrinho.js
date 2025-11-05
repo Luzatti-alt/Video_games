@@ -21,7 +21,8 @@ function renderCarrinho() {
 
   jogosNoCarrinho.forEach((jogo, index) => {
     // Para renderizar o total correto
-    total += jogo.preco; 
+    const precoSeguro = typeof jogo.preco === 'number' && !isNaN(jogo.preco) ? jogo.preco : 0;
+    total += precoSeguro;
 
     const jogoDiv = document.createElement("div");
     jogoDiv.classList.add("jogo");
@@ -40,7 +41,7 @@ function renderCarrinho() {
         </div>
       </div> <div class="preço">
         <h1>Preço:</h1>
-        <h1>R$ ${jogo.preco.toFixed(2)}</h1>
+        <h1>R$ ${precoSeguro.toFixed(2)}</h1>
         <div class="controle_carrinho">
           <button onclick="adicionar(${index})">adicionar</button>
           <button onclick="remover(${index})">remover</button>
