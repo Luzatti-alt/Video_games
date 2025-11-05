@@ -31,9 +31,6 @@ function renderCarrinho() {
         <img src="${jogo.imagem}" alt="${jogo.nome}">
         <div class="sobre_compra">
           <h1>${jogo.nome}</h1>
-          <div class="plataformas">
-            ${jogo.plataformas.map(p => `<img src="imagens/${p}.png" alt="${p}">`).join('')}
-          </div>
           <select>
             <option value="para mim">para mim</option>
             <option value="presente">presente</option>

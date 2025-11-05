@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const imagemElement = document.querySelector('.main-media #slide');
                 const imagemSrc = imagemElement ? imagemElement.getAttribute('src') : 'imagens/default.jpg';
                 
-                const tags = document.querySelectorAll('.tags p');
-                const plataformas = Array.from(tags).map(p => p.textContent.toLowerCase().replace(/[^a-z0-9]/g, ''));
-
                 if (preco > 0 && nomeJogo !== 'Jogo Desconhecido') {
                     // Chama a função global de salvamento
                     adicionarAoCarrinho(nomeJogo, preco, imagemSrc, plataformas);
