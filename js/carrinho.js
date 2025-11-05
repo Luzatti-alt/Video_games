@@ -30,20 +30,19 @@ function renderCarrinho() {
       <div class="jogo_info">
         <img src="${jogo.imagem}" alt="${jogo.nome}">
         <div class="sobre_compra">
-          <h1>${jogo.nome}</h1>
+          <h2>${jogo.nome}</h2>
           <select>
             <option value="para mim">para mim</option>
             <option value="presente">presente</option>
           </select>
-        </div>
-      </div> <div class="preço">
-        <h1>Preço:</h1>
-        <h1>R$ ${precoSeguro.toFixed(2)}</h1>
+          <p>R$ ${precoSeguro.toFixed(2)}</p>
         <div class="controle_carrinho">
-          <button onclick="adicionar(${index})">adicionar</button>
-          <button onclick="remover(${index})">remover</button>
+          <p onclick="adicionar(${index})">adicionar</p>
+          <p>|</p>
+          <p onclick="remover(${index})">remover</p>
         </div>
-      </div>
+        </div>
+      </div> 
     `;
 
     lista.appendChild(jogoDiv);

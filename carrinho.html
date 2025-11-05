@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/parallel.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/carrinho.css">
-    <title>carrinho paralel</title>
+    <title>Carrinho</title>
 </head>
 <body>
     <header>
@@ -16,40 +17,23 @@
                 <a href="#">COMMUNITY</a>
                 <a href="#">SUPPORT</a>
             </div>
-            <div class="user">
-                <p id="nick">Bem vindo,</p>
-                <a href="login.html">
-                    <img src="imagens/user.svg" alt="User icon" id="user">
-                </a>
-            </div>
             <a href="carrinho.html">
                 <img src="imagens/carrinho.svg" alt="carrinho icon" id="carrinho">
             </a>
         </nav>
     </header>
-    <h1 id="texto">seu carrinho</h1>
-    <div class="carrinho">
-        <div class="compras">
-            <div class="controle-compra">
-                <button>comprar</button>
-                <button>comprar como presente</button>
-                <button onclick="limparCarrinho()">remover todos os itens</button>
+    <main>
+
+        <div class="carrinho">
+            <div class="compras">
+                
+            </div>
+            <div class="total">
+                <h1>Total: R$ 0,00</h1> 
+                <button id="comprar" onclick="finalizarCompra()">finalizar compra</button>
             </div>
         </div>
-        <div class="total">
-            <h1>Total: R$ 0,00</h1> <button id="comprar" onclick="finalizarCompra()">finalizar compra</button>
-        </div>
-    </div>
-    <h1 id="texto">recomendações</h1>
-    <div class="recomendações">
-        <img src="imagens/Capa-Silksong.jpg" alt="recomendações">
-        <img src="imagens/Capa-Silksong.jpg" alt="recomendações">
-        <img src="imagens/Capa-Silksong.jpg" alt="recomendações">
-    </div>
-    <footer>
-        <img src="imagens/logo.png" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima maxime quis, quo tenetur debitis, deleniti totam quod iste corrupti nostrum vitae optio.</p>
-    </footer>
+    </main>
     <script src="js/dados.js" defer></script>
     <script src="js/salvar_carrinho.js" defer></script>
     <script src="js/carrinho.js" defer></script>
