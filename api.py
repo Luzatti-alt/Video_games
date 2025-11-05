@@ -38,6 +38,10 @@ def criar_conta():
         session.rollback()
         print(f"Erro ao cadastrar conta: {str(e)}")
         return jsonify({"erro": str(e)}), 500
+@db.route("/adicionar_carrinho/<jogos>", methods=["POST"])
+def add_jogo_conta():
+    #lista -> array da biblioteca
+    return "adicionando <jogos a conta>"
 
 #iniciar flask
 if __name__ == "__main__":
