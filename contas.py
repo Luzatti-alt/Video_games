@@ -9,7 +9,7 @@ class Contas(Base):
     nick = Column(String(50))
     email = Column(String(50))
     senha = Column(String(20))
-    meus_jogos = relationship('biblioteca', back_populates='contas')
+    meus_jogos = relationship('Biblioteca', back_populates='conta')
 class Biblioteca(Base):
     __tablename__ = 'biblioteca'
     id = Column(Integer, primary_key=True)

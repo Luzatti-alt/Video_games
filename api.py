@@ -2,9 +2,11 @@ from flask import Flask, jsonify, request, render_template, url_for
 from flask_bcrypt import Bcrypt #encriptar a senha 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from flask_cors import CORS
 import traceback
 from contas import Contas,Biblioteca
 db = Flask(__name__)
+CORS(db) 
 bcrypt = Bcrypt(db)
 engine = create_engine('sqlite:///contas_paralel.db', echo=True)
 Session = sessionmaker(bind=engine)
@@ -25,7 +27,7 @@ def criar_conta():
         if conta:
             return jsonify({"status": "erro", "mensagem": "Email já cadastrado!"})
         #verifica disponibilidade do nick
-        if session.query(db).filter_by(nick=nick).first():
+        if session.query(Contas).filter_by(nick=nick).first():
             conta_senha = bcrypt.generate_password_hash(dados["senha"]).decode("utf-8")
             nova_conta = Contas(nick=nick,email=email,senha=conta_senha)
             #conectar com o bd
@@ -51,7 +53,7 @@ def login():
         if not email or not senha:
             return jsonify({"status": "erro", "mensagem": "Campos obrigatórios ausentes"}), 400
         #refatoração apos a mudança do db(podia ter avisado que mudou os emails)
-        conta = session.query(db).filter_by(email=email).first()
+        conta = session.query(Contas).filter_by(email=email).first()
         if not conta:
             return jsonify({"status": "erro", "mensagem": "Usuário não encontrado"}), 404
         if bcrypt.check_password_hash(conta.senha, senha):

@@ -7,7 +7,13 @@ criar_conta.addEventListener('click', () => {
         alert("As senhas não são a mesma. Tente novamente.");
         return; // Impede o envio do formulário
     }
+    if (!nick) {
+        alert("Você precisa fornecer um nick.");
+        return; // Impede o envio se o nick for inválido
+    }
+    const nick = prompt("Por favor, escolha um nick:");
     const dadosConta = {
+        nick: nick,
         email: email,
         senha: senha,
         senha_conf: senhaConf
