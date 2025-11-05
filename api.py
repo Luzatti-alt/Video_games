@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from contas import Contas,Biblioteca
 db = Flask(__name__)
 bcrypt = Bcrypt(db)
-engine = create_engine('sqlite:///meubanco.db', echo=True)
+engine = create_engine('sqlite:///contas_paralel.db', echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
@@ -14,18 +14,25 @@ def root():
     return "só o root da api"
 @db.route("/criar_conta", methods=["POST"])
 def criar_conta():
-    #js mandar como json _> pegar os dados do json
+    #js mandar como json -> pegar os dados do json
+    #criar verificação de nick
     dados = request.get_json()
     email = dados.get("email")
     nick = dados.get("nick")
-    #criar verificação de nick
-    senha = dados.get("senha")
-    conta = session.query(conta).filter_by(email=email).first()
-    conta_senha = bcrypt.generate_password_hash(dados["senha"]).decode("utf-8")
-    nova_conta = conta(nick=nick,email=email,senha=conta_senha)
-    session.add(nova_conta)
-    session.commit()
-    return jsonify({"status": "ok", "mensagem": "Conta criada com sucesso!"})
+    conta = session.query(Contas).filter_by(email=email).first()
+    #se conta ja existe
+    if conta:
+        return jsonify({"status": "erro", "mensagem": "Email já cadastrado!"})
+    #verifica disponibilidade do nick
+    if session.query(db).filter_by(nick=nick).first():
+        conta_senha = bcrypt.generate_password_hash(dados["senha"]).decode("utf-8")
+        nova_conta = conta(nick=nick,email=email,senha=conta_senha)
+        #conectar com o bd
+        session.add(nova_conta)
+        session.commit()
+        return jsonify({"status": "ok", "mensagem": "Conta criada com sucesso!"})
+    else:
+        return jsonify({"status": "ok", "mensagem": "nick ja cadastrado!"})
 
 #iniciar flask
 if __name__ == "__main__":
