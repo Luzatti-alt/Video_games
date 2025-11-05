@@ -1,7 +1,11 @@
-//aqui ele fara alterações conforme a conta
 function carregarInfo() {
-    const Nick = localStorage.getItem("nick");//so para diferenciar o item salvo
-    //com o item aqui
-    document.getElementById("nick").textContent = dados.Nick;
+    const nick = localStorage.getItem("nick"); // pega o nick salvo
+
+    if (nick) {
+        document.getElementById("nick").textContent = "Bem-vindo, " + nick;
+    } else {
+        document.getElementById("nick").textContent = "Bem-vindo, visitante";
+    }
 }
-document.getElementById("nick").textContent = "bem vindo,"+dados.Nick;
+
+window.onload = carregarInfo;

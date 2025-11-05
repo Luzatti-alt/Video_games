@@ -20,10 +20,13 @@ document.querySelector("form").addEventListener("submit", function(event) {
     })
     .then(response => response.json())
     .then(data => {
+        console.log(data)
+        console.log(data.usuario.email)
+        console.log(data.usuario.nick)
         if (data.status === "ok") {
             alert(data.mensagem);
-            localStorage.setItem("usuarioEmail", email);
-            localStorage.setItem("nick", nick);//dai ele vai trocar o nick
+            const nick = data.usuario.nick; // usa o nick se existir, senão o email
+            localStorage.setItem("nick", nick);
             window.location.href = "/index.html";
         } else {
             alert(data.mensagem);
