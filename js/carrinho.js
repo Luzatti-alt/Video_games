@@ -1,26 +1,11 @@
-// js/carrinho.js
-
-//exemplo com array(vou trocar para localstorage)
-const jogosNoCarrinho = [
-  {
-    nome: "Dragon Ball: Sparking! Zero",
-    imagem: "imagens/dbz.jfif",
-    preco: 299.99,
-    plataformas: ["windows", "linux", "apple"] 
-  },
-  {
-    nome: "Hollow Knight: Silksong",
-    imagem: "imagens/Capa-Silksong.jpg",
-    preco: 60.50,
-    plataformas: ["windows", "linux"]
-  }
-];
-const containerCompras = document.querySelector(".carrinho > .compras"); // Seleciona a div .compras principal
-const controleCompraEl = document.querySelector(".controle-compra"); // Seleciona o bloco de botões de controle
+let jogosNoCarrinho = []; 
+const containerCompras = document.querySelector(".carrinho > .compras");
+const controleCompraEl = document.querySelector(".controle-compra");
 let total = 0;
 
-// Cria dinamicamente os itens do carrinho
 function renderCarrinho() {
+  jogosNoCarrinho = getCarrinho(); // Função de salvar_carrinho.js
+  
   const lista = document.createElement("div");
   lista.id = "lista-jogos";
   lista.innerHTML = "";
@@ -29,16 +14,17 @@ function renderCarrinho() {
   // Se o carrinho estiver vazio, exibe uma mensagem
   if (jogosNoCarrinho.length === 0) {
     lista.innerHTML = '<h2 style="text-align: center; padding: 20px;">Seu carrinho está vazio.</h2>';
+    if (controleCompraEl) controleCompraEl.style.display = 'none';
   } else {
-    controleCompraEl.style.display = 'flex'; // Exibe os botões de controle
+    if (controleCompraEl) controleCompraEl.style.display = 'flex'; // Exibe os botões de controle
   }
 
   jogosNoCarrinho.forEach((jogo, index) => {
-    total += jogo.preco;
+    // Para renderizar o total correto
+    total += jogo.preco; 
 
     const jogoDiv = document.createElement("div");
     jogoDiv.classList.add("jogo");
-
     jogoDiv.innerHTML = `
       <div class="jogo_info">
         <img src="${jogo.imagem}" alt="${jogo.nome}">
@@ -52,14 +38,14 @@ function renderCarrinho() {
             <option value="presente">presente</option>
           </select>
         </div>
-      <div class="preço">
+      </div> <div class="preço">
         <h1>Preço:</h1>
         <h1>R$ ${jogo.preco.toFixed(2)}</h1>
         <div class="controle_carrinho">
           <button onclick="adicionar(${index})">adicionar</button>
           <button onclick="remover(${index})">remover</button>
         </div>
-    </div>
+      </div>
     `;
 
     lista.appendChild(jogoDiv);
@@ -67,43 +53,44 @@ function renderCarrinho() {
 
   // Atualiza o total
   atualizarTotal();
-
-  // 2. CORREÇÃO: Remove a lista antiga, depois insere a lista nova no início
   const jogosAntigos = document.getElementById("lista-jogos");
   if (jogosAntigos) jogosAntigos.remove();
-  
-  // Insere a nova lista ANTES do bloco de botões de controle
-  containerCompras.insertBefore(lista, controleCompraEl);
+  if (containerCompras && controleCompraEl) {
+    containerCompras.insertBefore(lista, controleCompraEl);
+  } else if (containerCompras) {
+    containerCompras.appendChild(lista);
+  }
 }
-
-// --- Funções de controle ---
 function adicionar(index) {
-  // Nota: Para um carrinho real, você precisaria adicionar uma lógica para aumentar a quantidade ou 
-  // duplicar o item no array. Aqui, estamos apenas atualizando o total.
-  alert(`Simulação: Adicionado mais 1 unidade de ${jogosNoCarrinho[index].nome}`);
-  total += jogosNoCarrinho[index].preco;
-  atualizarTotal();
+  const itemDuplicado = { ...jogosNoCarrinho[index] };
+  jogosNoCarrinho.push(itemDuplicado);
+  salvarCarrinho(jogosNoCarrinho); 
+  renderCarrinho(); // Recarrega do storage
 }
 
 function remover(index) {
   if (confirm(`Remover ${jogosNoCarrinho[index].nome} do carrinho?`)) {
-    // Subtrai o preço antes de remover
-    total -= jogosNoCarrinho[index].preco; 
     jogosNoCarrinho.splice(index, 1);
-    renderCarrinho(); // Recarrega a lista
+    salvarCarrinho(jogosNoCarrinho);
+    renderCarrinho(); 
   }
 }
 
 function limparCarrinho() {
   if (confirm("Remover todos os itens do carrinho?")) {
-    jogosNoCarrinho.length = 0;
+    limparCarrinhoStorage();
     renderCarrinho();
   }
 }
 
 function atualizarTotal() {
+  // Recalcula o total a partir do array atualizado (jogosNoCarrinho)
+  const novoTotal = jogosNoCarrinho.reduce((acc, jogo) => acc + jogo.preco, 0);
+  
   const totalContainer = document.querySelector(".total h1");
-  totalContainer.innerText = `Total: R$ ${total.toFixed(2)}`;
+  if (totalContainer) {
+    totalContainer.innerText = `Total: R$ ${novoTotal.toFixed(2)}`;
+  }
 }
 
 function finalizarCompra() {
@@ -111,7 +98,8 @@ function finalizarCompra() {
     alert("Seu carrinho está vazio!");
     return;
   }
-  alert(`Compra de R$ ${total.toFixed(2)} finalizada com sucesso!`);
+  const valorFinal = jogosNoCarrinho.reduce((acc, jogo) => acc + jogo.preco, 0);
+  alert(`Compra de R$ ${valorFinal.toFixed(2)} finalizada com sucesso!`);
   limparCarrinho();
 }
 
