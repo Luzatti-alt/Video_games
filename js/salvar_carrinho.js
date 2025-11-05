@@ -52,6 +52,8 @@ function adicionarAoCarrinho(nome, preco, imagem, plataformas) {
 
     salvarCarrinho(carrinhoAtual);
     alert(`"${nome}" adicionado ao carrinho!`);
+    console.log(`"${nome}" adicionado ao carrinho!`);
+    console.log(`"${nome}" adicionado ao carrinho!`);
 }
 
 function limparCarrinhoStorage() {
