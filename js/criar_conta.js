@@ -20,7 +20,7 @@ function criarConta() {
 
         const dadosConta = { nick, email, senha };
 
-        fetch('http://10.158.49.11:5000/criar_conta', {
+        fetch('http://10.158.49.18:5000/criar_conta', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dadosConta)

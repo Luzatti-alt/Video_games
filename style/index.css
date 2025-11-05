@@ -11,6 +11,10 @@ body{
 header{
     margin-bottom: 20px;
 }
+#carrinho{
+    height: 50px;
+    width: 50px;
+}
 #header-nav{
     display: flex;
     align-items: center;

@@ -11,7 +11,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
         email: email,
         senha: senha
     };
-    fetch("http://10.158.49.11:5000/login", {
+    fetch("http://10.158.49.18:5000/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
