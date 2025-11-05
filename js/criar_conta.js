@@ -28,6 +28,7 @@ function criarConta() {
         .then(response => response.json())
         .then(data => {
             alert(data.mensagem);
+            window.location.href = "/index.html";
         })
         .catch(error => {
             console.error("Erro:", error);
