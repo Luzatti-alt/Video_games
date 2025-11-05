@@ -84,10 +84,16 @@ h1,h2,h3,h4,p,li,th,tr,a{
     display: flex;
     background-color: #472247;
     width: 95%;
+    margin-bottom: 1%;
+    padding: 1%;
     gap: 5%;
 }
 .jogo_info{
     display: flex;
+}
+.jogo_info img{
+    width: 250px;
+    margin-right: 2%;
 }
 .sobre_compra{
     gap:5%;

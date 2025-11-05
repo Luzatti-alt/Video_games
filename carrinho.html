@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style/carrinho.css">
     <title>carrinho paralel</title>
 </head>
-<!--esqueleto-->
 <body>
     <header>
         <nav id="header-nav">
@@ -23,7 +22,6 @@
                     <img src="imagens/user.svg" alt="User icon" id="user">
                 </a>
             </div>
-            <!--carrinho-->
             <a href="carrinho.html">
                 <img src="imagens/carrinho.svg" alt="carrinho icon" id="carrinho">
             </a>
@@ -32,45 +30,14 @@
     <h1 id="texto">seu carrinho</h1>
     <div class="carrinho">
         <div class="compras">
-            <!--placehoarder de como ficara-->
-            <div class="jogo">
-                <!--informações do jogo-->
-                <div class="jogo_info">
-                    <img src="imagens/dbz.jfif" alt="logo_jogo">
-                    <div class="sobre_compra">
-                        <h1>Dragon Ball: Sparking! Zero</h1>
-                        <div class="plataformas">
-                            <img src="imagens/windows.png" alt="plataforma 1">
-                            <img src="imagens/linux.png" alt="plataforma 2">
-                            <img src="imagens/apple.png" alt="plataforma 3">
-                        </div>
-                        <select id="comprar_para">
-                            <option value="para mim">para mim</option>
-                            <option value="presente">presente</option>
-                        </select>
-                    </div>
-                </div>
-                <!--preço-->
-                <div class="preço">
-                    <h1>Preço:</h1>
-                    <h1>R$00,00</h1>
-                    <div class="controle_carrinho">
-                        <button>adicionar</button>
-                        <button>remover</button>
-                    </div>
-                </div>
-            </div>
-            <!--parte de controle da compra-->
-            <div class="compras">
+            <div class="controle-compra">
                 <button>comprar</button>
                 <button>comprar como presente</button>
-                <button>remover todos os itens</button>
+                <button onclick="limparCarrinho()">remover todos os itens</button>
             </div>
         </div>
-        <!--finalizar compra-->
         <div class="total">
-            <h1>total</h1>
-            <button id="comprar">finlaizar compra</button>
+            <h1>Total: R$ 0,00</h1> <button id="comprar" onclick="finalizarCompra()">finalizar compra</button>
         </div>
     </div>
     <h1 id="texto">recomendações</h1>
@@ -79,11 +46,11 @@
         <img src="imagens/Capa-Silksong.jpg" alt="recomendações">
         <img src="imagens/Capa-Silksong.jpg" alt="recomendações">
     </div>
-    <!--roda pe-->
     <footer>
         <img src="imagens/logo.png" alt="">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima maxime quis, quo tenetur debitis, deleniti totam quod iste corrupti nostrum vitae optio.</p>
     </footer>
     <script src="js/dados.js" defer></script>
+    <script src="js/carrinho.js" defer></script>
 </body>
 </html>
