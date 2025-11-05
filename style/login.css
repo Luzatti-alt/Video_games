@@ -45,6 +45,10 @@ div.input input{
 div.input input::placeholder{
     color: #472247;
 }
+div.login-cadastro{
+    display: flex;
+    justify-content: space-between;
+}
 form input[type="submit"]{
     background-color: #773977;
     border: none;
@@ -52,4 +56,15 @@ form input[type="submit"]{
     width: 200px;
     height: 30px;
     cursor: pointer;
+}
+form a{
+    background-color: #773977;
+    color: white;
+    width: 200px;
+    line-height: 30px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8em;
 }

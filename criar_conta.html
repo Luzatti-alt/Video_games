@@ -4,42 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar conta</title>
-    <link rel="stylesheet" href="style/criar_conta.css">
+    <link rel="shortcut icon" href="imagens/parallel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-    <div class="topo">
-        <div class="Paralel">
-            <img src="imagens/logo.png" id="logo">
-            <h1>Paralel</h1>
-        </div>
-    </div>
-    <div class="criar_conta">
-        <h1>criar a sua conta</h1>
-        <div class="infos">
-            <h1>nick:</h1>
-            <input id="nick">
-            <h1>email:</h1>
-            <input type="email" id="email">
-            <h1>senha:</h1>
-            <input type="password" id="senha">
-            <h1>confirmar senha:</h1>
-            <input type="password" id="senha_conf">
-        </div>
-        <button id="criar_conta" onclick="criar_conta()">criar conta</button>
-        <!--desculpa a gambiarra é so pq nn tem tempo para fazer certo antes de começar-->
-        <div class="invisivel"><h6>inv</h6></div>
-    </div>
-    <div class="roda_pe">
-                <img src="imagens/logo.png">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ex quisquam tempora optio quos amet magni fugit veritatis consectetur officiis?</h2>
-                <div class="barra_fundo">
-                    <button>sobre empresa</button>
-                    <button>Empregos</button>
-                    <button>suporte</button>
-                    <button id="whats"><img src="imagens/whats.png"></button>
-                </div>
+   <main>
+        <img src="imagens/logo.png" alt="logo">
+        <form class="infos">
+            <div class="input">
+                <label for="nick">Usuário</label>
+                <input type="text" id="nick" required>
             </div>
-            <script src="js/whats.js"></script>
+            <div class="input">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" minlength="8" required>
+            </div>
+            <div class="input">
+                <label for="senha_conf">Confirme a senha</label>
+                <input type="password" id="senha_conf" minlength="8" required>
+            </div>
+            <div class="login-cadastro">
+                <input type="submit" value="Cadastre-se" id="criar_conta" onclick="criar_conta()">
+                <a href="login.html">Entrar</a>
+            </div>
+        </form>
+        <!-- <button id="criar_conta" onclick="criar_conta()">criar conta</button> -->
+    </main>
     <script src="js/criar_conta.js"></script>
 </body>
 </html>
